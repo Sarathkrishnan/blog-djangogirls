@@ -3,6 +3,7 @@ from django.conf import settings
 from django.utils import timezone
 
 # Create your models here.
+#*model.py*
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
